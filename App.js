@@ -15,8 +15,5 @@ function App() {
   );
 }
 
-function Home() {
-  return <TabBarNavigation />;
-}
 
 export default App;

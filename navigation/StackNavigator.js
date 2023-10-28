@@ -4,13 +4,13 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 //importing screens
-import Welcome from "../screeens/WelcomeScreen/Welcome";
+import Welcome from "../screens/WelcomeScreen/Welcome";
 import TabBarNavigation from "./TabBarNavigation";
-import FirstRecipe from "../screeens/RecipeScreen/FirstRecipe";
-import SecondRecipe from "../screeens/RecipeScreen/SecondRecipe";
-import ThirdRecipe from "../screeens/RecipeScreen/ThirdRecipe";
-import FourthRecipe from "../screeens/RecipeScreen/FourthRecipe";
-import FifthRecipe from "../screeens/RecipeScreen/FifthRecipe";
+import FirstRecipe from "../screens/RecipeScreen/FirstRecipe";
+import SecondRecipe from "../screens/RecipeScreen/SecondRecipe";
+import ThirdRecipe from "../screens/RecipeScreen/ThirdRecipe";
+import FourthRecipe from "../screens/RecipeScreen/FourthRecipe";
+import FifthRecipe from "../screens/RecipeScreen/FifthRecipe";
 
 const Stack = createNativeStackNavigator();
 

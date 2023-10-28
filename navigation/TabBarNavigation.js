@@ -9,9 +9,9 @@ import { AntDesign, Entypo } from "expo-vector-icons";
 
 
 //importing screens
-import HomeScreen from "../screeens/SubScreens/HomeScreen";
-import SearchScreen from "../screeens/SubScreens/SearchScreen";
-import FavouriteScreen from "../screeens/SubScreens/FavouriteScreen";
+import HomeScreen from "../screens/SubScreens/HomeScreen";
+import SearchScreen from "../screens/SubScreens/SearchScreen";
+import FavouriteScreen from "../screens/SubScreens/FavouriteScreen";
 
 const Tab = createBottomTabNavigator();
 

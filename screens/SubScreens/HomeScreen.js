@@ -19,8 +19,6 @@ import meatballs from "../../assets/images/recipes/meatballs.jpg";
 import recipe from "../../assets/images/recipes/recipe.png";
 //import { withNavigation } from "react-navigation";
 
-
-
 export default function Hom({ navigation }) {
   const sliderWidth = Dimensions.get("window").width;
   let carousel;
@@ -56,11 +54,9 @@ export default function Hom({ navigation }) {
       content: "Malaysian Chicken Satay",
       text: "50 min| 10 serving",
     },
-    
   ]);
   return (
     <ScrollView style={styles.homecontainer}>
-
       <View style={styles.homefirstsection}>
         <View style={styles.homeintro}>
           <Text style={styles.homeintrotext}>Hello Name,</Text>
@@ -105,20 +101,28 @@ export default function Hom({ navigation }) {
 
       <View style={styles.foodcategorymain}>
         {/* beginning of first food category */}
-        <TouchableOpacity style={styles.foodcategory} onPress={() =>
-            navigation.navigate("FirstRecipe", { screen: "FirstRecipe" })} >
+        <TouchableOpacity
+          style={styles.foodcategory}
+          onPress={() =>
+            navigation.navigate("FirstRecipe", { screen: "FirstRecipe" })
+          }
+        >
           <View style={styles.foodimgcontainer}>
             <Image source={spagetti} style={styles.foodimg} />
           </View>
-          <View style={styles.foodtextcontainer} >
+          <View style={styles.foodtextcontainer}>
             <Text style={styles.foodtext}>Spaghetti With Shrimp Sauce</Text>
             <Text style={styles.foodtext2}>30 mins| 1 serving</Text>
           </View>
         </TouchableOpacity>
 
         {/* beginning of second food category */}
-        <TouchableOpacity style={styles.foodcategory} onPress={() =>
-            navigation.navigate("SecondRecipe", { screen: "SecondRecipe" })}>
+        <TouchableOpacity
+          style={styles.foodcategory}
+          onPress={() =>
+            navigation.navigate("SecondRecipe", { screen: "SecondRecipe" })
+          }
+        >
           <View style={styles.foodimgcontainer}>
             <Image source={buffalo} style={styles.foodimg} />
           </View>
@@ -129,8 +133,12 @@ export default function Hom({ navigation }) {
         </TouchableOpacity>
 
         {/* beginning of third food category */}
-        <TouchableOpacity style={styles.foodcategory} onPress={() =>
-            navigation.navigate("FifthRecipe", { screen: "FifthRecipe" })}>
+        <TouchableOpacity
+          style={styles.foodcategory}
+          onPress={() =>
+            navigation.navigate("FifthRecipe", { screen: "FifthRecipe" })
+          }
+        >
           <View style={styles.foodimgcontainer}>
             <Image source={chickensatay} style={styles.foodimg} />
           </View>
@@ -141,8 +149,12 @@ export default function Hom({ navigation }) {
         </TouchableOpacity>
 
         {/* beginning of fourth food category */}
-        <TouchableOpacity style={styles.foodcategory} onPress={() =>
-            navigation.navigate("FourthRecipe", { screen: "FourthRecipe" })}>
+        <TouchableOpacity
+          style={styles.foodcategory}
+          onPress={() =>
+            navigation.navigate("FourthRecipe", { screen: "FourthRecipe" })
+          }
+        >
           <View style={styles.foodimgcontainer}>
             <Image source={meatballs} style={styles.foodimg} />
           </View>
@@ -153,8 +165,12 @@ export default function Hom({ navigation }) {
         </TouchableOpacity>
 
         {/* beginning of fourth food category */}
-        <TouchableOpacity style={styles.foodcategory}  onPress={() =>
-            navigation.navigate("ThirdRecipe", { screen: "ThirdRecipe" })}>
+        <TouchableOpacity
+          style={styles.foodcategory}
+          onPress={() =>
+            navigation.navigate("ThirdRecipe", { screen: "ThirdRecipe" })
+          }
+        >
           <View style={styles.foodimgcontainer}>
             <Image source={satay} style={styles.foodimg} />
           </View>
@@ -184,7 +200,6 @@ const renderItems = ({ item }) => {
         justifyContent: "center",
         alignItems: "center",
       }}
-      
     >
       <ImageBackground
         resizeMode="cover"
@@ -208,7 +223,6 @@ const renderItems = ({ item }) => {
         </View>
 
         <View
-          
           style={{
             position: "absolute",
             bottom: 10,
@@ -216,7 +230,7 @@ const renderItems = ({ item }) => {
             right: 10,
             paddingVertical: 5,
             paddingHorizontal: 10,
-            backgroundColor:' rgba(0, 0, 0, 0.6)',
+            backgroundColor: " rgba(0, 0, 0, 0.6)",
             borderRadius: 10,
             height: 100,
             flexDirection: "row",
@@ -246,4 +260,3 @@ const renderItems = ({ item }) => {
     </TouchableOpacity>
   );
 };
-

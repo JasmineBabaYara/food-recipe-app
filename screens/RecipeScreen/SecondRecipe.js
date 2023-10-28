@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { View, Text, ImageBackground, Image } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
 
 {
@@ -78,17 +84,14 @@ export default function Other({ navigation }) {
             <Image source={profile4} style={styles.profiles} />
             <Image source={profile5} style={styles.profiles} />
           </View>
-          
         </View>
         <Text style={styles.profiletext}>5 people</Text>
-            <Text style={styles.profiletext2}>Already tried this!</Text>
+        <Text style={styles.profiletext2}>Already tried this!</Text>
 
-            
         <View style={styles.ingredientcontainer}>
           <Text style={styles.ingretext}>Ingredients</Text>
           <Text style={styles.ingretext2}>7 items</Text>
         </View>
-      
 
         {/* first ingredient */}
         <View style={styles.ingredient1}>

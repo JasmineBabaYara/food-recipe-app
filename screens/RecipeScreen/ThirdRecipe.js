@@ -1,5 +1,12 @@
 import React from "react";
-import { View, Text, ImageBackground, Image, ScrollView } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
 
 {
@@ -67,7 +74,7 @@ export default function Other({ navigation }) {
       <View style={styles.allingredients}>
         <View style={styles.shrimpcontainer}>
           <View style={styles.foodtextcontainer}>
-            <Text style={styles.foodtext}>Malaysian Chicken {'\n'}Satay</Text>
+            <Text style={styles.foodtext}>Malaysian Chicken {"\n"}Satay</Text>
             <Text style={styles.foodtext2}>50 mins| 10 serving</Text>
           </View>
           <View style={styles.profilescontainer}>
@@ -75,17 +82,14 @@ export default function Other({ navigation }) {
             <Image source={profile3} style={styles.profiles} />
             <Image source={profile4} style={styles.profiles} />
           </View>
-          
         </View>
         <Text style={styles.profiletext}>3 people</Text>
-            <Text style={styles.profiletext2}>Already tried this!</Text>
+        <Text style={styles.profiletext2}>Already tried this!</Text>
 
-            
         <View style={styles.ingredientcontainer}>
           <Text style={styles.ingretext}>Ingredients</Text>
           <Text style={styles.ingretext2}>7 items</Text>
         </View>
-        
 
         {/* frist ingredient */}
         <View style={styles.ingredient1}>

@@ -1,14 +1,14 @@
 # Food-recipe-app
-Welcome to GetCooking, a frontend mobile application that utilizes google maps api to generate specific location.
+Welcome to GetCooking, a frontend mobile application that provides detailed stpes on how to prepare a specific meal.
 
-## Getting Started
+## Setup
 Clone the repository:
 ~~~
-git clone https://github.com/JasmineBabaYara/Food-Delivery-App
+git clone https://github.com/JasmineBabaYara/food-recipe-app.git
 ~~~
 Install the dependencies:
 ~~~
-cd food-delivery-app
+cd food-recipe-app
 npm install
 ~~~
 Start the expo server:
@@ -18,12 +18,11 @@ expo start
 Choose either android, ios or a web simulator to open the project.
 
 ## Usage
-To use the application, simply upload a resume in either PDF or Word format and the application will extract useful information such as contact information and work experience. With this information, you can quickly and easily identify the best candidates for your open positions.
+To use the application, simply turn on your desired simulator, click on getting started and navigate your way through. 
 
 ## Built With
 - React Native 
 - Expo 
-- Google Maps Api  
 
 ## Author
 - Jasmine Baba Yara - [JasmineBabaYara](https://github.com/JasmineBabaYara)
